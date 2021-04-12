@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int * zad321(int*a, int*b)
+int zad321(int*a, int*b)
 {
     if(*a>*b) return *b;
     return *a;
