@@ -5,9 +5,12 @@ int foo(unsigned int n)
 {
     if(n == 0 || n == 1)
         return 3;
+
     if(n%2==0)
-        return foo(n - 1) + n;
-    return 2 * foo(n-1) - 2 * n;
+    {
+        return foo((n/2)-1) + n/2;
+    }
+    return  foo(n-1) * 2 - (n-1);
 }
 int main()
 {
