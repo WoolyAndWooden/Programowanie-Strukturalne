@@ -1,0 +1,45 @@
+---
+title: "Programowanie strukturalne - Kolokwium 1 - Zestaw 45"
+lang: pl
+output:
+  word_document: default
+  pdf_document: default
+---
+
+**Każde zadanie powinno być w oddzielnym pliku. Rozwiązanie umieść 
+na swoim indywidualnym repozytorium na Githubie (pojedyncze pliki) lub prześlij jako archiwum zip
+poprzez wiadomość prywatną na MS Teams.** 
+
+1. W folderze Debug45 znajduje się projekt z kodem w języku C.
+W pliku main.c w niektórych linijkach są komentarze. 
+Twoim zadaniem jest wpisanie wartości odpowiednich zmiennych po wykonaniu konkretnej linii kodu.
+
+*Punktacja: 1 pkt za każdą poprawną linijkę, łącznie 8 pkt.*
+
+2. Napisz funkcję, której argumentem jest liczba całkowita $n$ (może być różnych znaków). Funkcja zwraca 1 jeśli $n$ jest kwadratem innej liczby całkowitej oraz zwraca 0 w przeciwnym wypadku. Stwórz przypadek testowy dla funkcji. W zadaniu nie korzystaj z funkcji bibliotecznych poza instrukcjami wejścia/wyjścia.
+
+*Punktacja: 9 pkt.*
+
+3. Napisz funkcję `foo`, która ma dwa argumenty. Pierwszym argumentem jest stały wskaźnik `wsk1` na zmienną typu `double`, drugim argumentem wskaźnik `wsk2` na stałą wartość typu `double`. Funkcja `foo` ma zwrócić iloczyn wartości wskazywanych przez argumenty funkcji. Stwórz dwa przypadki testowe.
+
+*Punktacja: 10 pkt.*
+
+4. Napisz rekurencyjną funkcję, zwracającą dla otrzymanej w argumencie
+nieujemnej liczby całkowitej $n$ wartość elementu o indeksie $n$ ciągu
+zdefiniowanego w następujący sposób:
+
+$$ a_0=1 $$
+$$a_1=2 $$
+$$a_2=-2 $$
+$$ a_{3n} =2 a_n $$
+$$ a_{3n+1}= a_{2n}-1 $$
+$$ a_{3n+2}=a_{3n+1}$$
+
+Stwórz dwa przypadki testowe.
+
+*Punktacja: 11 pkt.*
+
+5. Napisz funkcję, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą
+$n$ oraz $2n$-elementową tablicę `tab` o elementach typu `int`. Funkcja ma zwrócić wskaźnik do pierwszego parzystego elementu w tablicy. W przypadku braku takich elementów, funkcja ma zwrócić wskaźnik na początkowy element. Stwórz dwa przypadki testowe dla funkcji.
+
+*Punktacja: 12 pkt o ile rozwiązanie korzysta tylko ze wskaźników. 6 pkt za rozwiązanie mieszane lub tylko w notacji tablicowej.*
