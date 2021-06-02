@@ -17,32 +17,34 @@ int wlen(wchar_t *tekst)
 
 }
 
-void foochar(char *str1, char str2[])
+void foochar(char *str1, char str2[], unsigned int n)
 {
     int lenstr1 = len(str1);
     int lenstr2 = len(str2);
 
     if(lenstr2 >= lenstr1)
     {
-        for(int i = 0; i <= lenstr1; i++)
+        for(int i = 0; i < n; i++)
         {
             str2[i] = str1[i];
         }
+        str2[n] = '\0';
     }
 
 }
 
-void foochar2(wchar_t *str1, wchar_t str2[])
+void foochar2(wchar_t *str1, wchar_t str2[], unsigned int n)
 {
     int lenstr1 = wlen(str1);
     int lenstr2 = wlen(str2);
 
     if(lenstr2 >= lenstr1)
     {
-        for(int i = 0; i <= lenstr1; i++)
+        for(int i = 0; i < n; i++)
         {
             str2[i] = str1[i];
         }
+        str2[n] = 0;
     }
 }
 
@@ -54,8 +56,9 @@ int main()
     wchar_t *wtekst = u"Hello World";
     wchar_t wtekst2[] = u"Ala lubi pieski";
     printf("%s, %ls\n", tekst2, wtekst2);
-    foochar(tekst, tekst2);
-    foochar2(wtekst, wtekst2);
-    printf("%s, %ws", tekst2, wtekst2);
+    foochar(tekst, tekst2, 3);
+    foochar2(wtekst, wtekst2, 5);
+    printf("%s, %ws\n", tekst2, wtekst2);
+
     return 0;
 }

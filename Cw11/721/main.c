@@ -11,8 +11,7 @@ struct Trojkat
 
 double foo(struct Trojkat trojfoo)
 {
-    double p = (trojfoo.a + trojfoo.b + trojfoo.c)/2;
-    return sqrt(p * (p - trojfoo.a) * (p - trojfoo.b) * (p- trojfoo.c));
+    return trojfoo.a + trojfoo.b + trojfoo.c;
 }
 int main()
 {
