@@ -1,0 +1,43 @@
+---
+title: "Programowanie strukturalne - Kolokwium 2 - Zestaw 49"
+lang: pl
+output:
+  word_document: default
+  pdf_document: default
+---
+
+**Każde zadanie powinno być w oddzielnym pliku. Rozwiązanie umieść 
+na swoim indywidualnym repozytorium na Githubie (pojedyncze pliki) lub prześlij jako archiwum zip
+poprzez wiadomość prywatną na MS Teams. Szczegóły są opisane w zespole ćwiczeń w MS Teams.** 
+
+1. W folderze Debug249 znajduje się projekt z kodem w języku C.
+W pliku main.c w niektórych linijkach są komentarze. 
+Twoim zadaniem jest wpisanie wartości odpowiednich zmiennych po wykonaniu konkretnej linii kodu.
+
+*Punktacja: 7 pkt.*
+
+2. Napisz funkcję, której argumentem są dwa napisy. Funkcja powinna zwrócić informację ile znaków spacji jest w krótszym napisie. Jeśli napisy są równej długości, to funkcja powinna zwrócić liczbę znaków spacji z pierwszego napisu. Stwórz przypadek testowy.
+
+*Punktacja: 8 pkt.*
+
+3. Napisz funkcję, której argumentem jest dwuwymiarowa tablica tablic (zawierająca zmienne typu `float`) oraz jej wymiary $n$ i $m$. Funkcja ma zwrócić średnią elementów z głównej przekątnej. Stwórz przypadek testowy.
+
+*Punktacja: 10 pkt.*
+
+4. Stwórz strukturę `Biegacz` o dwóch polach `imie` (napis) oraz `rekord` (`dowolny typ całkowity`). Następnie stwórz funkcję, której argumentami jest tablica struktur `Biegacz` oraz rozmiar tablicy. Funkcja ma zwrócić imię biegacza z najlepszym (najmniejszym liczbowo) wynikiem (w przypadku kilku równych wyników, ma zwrócić imię ostatniego). Stwórz przypadek testowy.
+
+*Punktacja: 10 pkt.*
+
+5. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+
+```c
+struct node {
+    int x;
+    struct node * next;
+};
+```
+
+oraz liczbę całkowitą `a`. Funkcja ma wyświetlić adresy wszystkich elementów równych `a`. Stwórz jeden przypadek testowy.
+
+
+*Punktacja: 15 pkt.*
